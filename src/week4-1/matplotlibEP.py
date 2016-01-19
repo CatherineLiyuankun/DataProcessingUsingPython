@@ -23,6 +23,7 @@ for i in range(0, len(quotes)):
 
 quotesdf = pd.DataFrame(quotes, index=list1, columns=fields)
 quotesdf = quotesdf.drop(['date'], axis=1)
+quotesdf.close.plot()
 
 # quotesdf = pd.DataFrame(quotes, index=range(1, len(quotes) + 1), columns=fields)
 
